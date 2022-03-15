@@ -1,0 +1,242 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* --------Typography--------- */
+* {
+  font-family: 'Inconsolata', monospace;
+}
+
+.nav a {
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+
+.wrapper, footer, nav a {
+  color: white;
+}
+
+
+/* --------Containers--------- */
+body {
+  background-image: url(chef-5813413_1920.jpg );
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size:800px;
+  background-color: #141111;
+  background-position: center;
+}
+
+
+.main {
+    /* background: linear-gradient(to right, #c2e59c, #3f9be6); */
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 85vh;
+}
+
+.content {
+    flex: 1 1 70%;
+    border-right: 1px solid rgb(255, 255, 255, 0.2);
+    
+}
+
+.content h2 {
+  text-align: center;
+}
+
+.nav{
+    flex: 1 1 30%;
+    padding-left: 1em;
+}
+
+
+/* Glass effect */
+.container {
+    margin: 2em 0 1em 0;
+    width: 720px;
+    border-radius: 0.5rem;
+    padding: 0.5em;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, .15);
+    backdrop-filter: blur(5px);
+    width: 700px;
+}
+
+
+/* GRID - Content */
+.grid-container {
+    display: grid;
+    padding: 10px;
+}
+ .item1 {
+   padding: 0 40px;
+ }
+  
+  .grid-container > div {
+    text-align: left;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* ------------------------------- */
+/* --------NIGATION-SIDE--------- */
+img {
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 5em;
+}
+
+.image{
+    text-align: center;
+}
+
+.nav-box{
+      margin-top: 1em;
+      margin-bottom: 3em;
+      text-align: center;
+}
+
+ .nav-box ul {
+    list-style-type: none;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.nav a:hover {
+    text-decoration: none;
+    
+    color: #0a0606;
+}
+
+table {
+    text-align: center;
+}
+
+th{
+padding-top: 8px;
+}
+
+/* ------------------------ */
+/* --------FOOTER--------- */
+.footer {
+    border-top: 1px solid rgb(255, 255, 255, 0.2);
+    text-align: center;
+}
+
+/* Social media buttons */
+
+.social-media{
+    display: inline-flex;
+  }
+  
+  .social-media .icon{
+    margin: 10px 10px;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+    transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  .social-media .icon span{
+    display: block;
+    height: 40px;
+    width: 40px;
+    background: rgb(255,255,255,0.8);
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+    transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .social-media .icon span i{
+    line-height: 40px;
+    font-size: 15px;
+  }
+  .social-media .icon .tooltip{
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    background: #fff;
+    color: #fff;
+    padding: 10px 18px;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 25px;
+    opacity: 0;
+    pointer-events: none;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+    transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .social-media .icon:hover .tooltip{
+    top: -50px;
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .social-media .tooltip:before{
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background: #fff;
+    left: 50%;
+    bottom: -6px;
+    transform: translateX(-50%) rotate(45deg);
+    transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .social-media .icon:hover span{
+    color: #fff;
+  }
+  .social-media.icon:hover span,
+  .social-media .icon:hover .tooltip{
+    text-shadow: 0px -1px 0px rgba(0,0,0,0.4);
+  }
+  .social-media .facebook:hover span,
+  .social-media .facebook:hover .tooltip,
+  .social-media .facebook:hover .tooltip:before{
+    background: #3B5999;
+  }
+  .social-media .twitter:hover span,
+  .social-media .twitter:hover .tooltip,
+  .social-media .twitter:hover .tooltip:before{
+    background: #46C1F6;
+  }
+  .social-media .instagram:hover span,
+  .social-media .instagram:hover .tooltip,
+  .social-media .instagram:hover .tooltip:before{
+    background: #e1306c;
+  }
+  .social-media .github:hover span,
+  .social-media .github:hover .tooltip,
+  .social-media .github:hover .tooltip:before{
+    background: #333;
+  }
+  .social-media .youtube:hover span,
+  .social-media .youtube:hover .tooltip,
+  .social-media .youtube:hover .tooltip:before{
+    background: #DE463B;
+  }
